@@ -1,0 +1,103 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.autocomplete {
+    position: relative;
+    width: 100%;
+}
+
+.autocomplete button {
+    padding: 15px;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 4px;
+
+    list-style: none;
+    padding: 0;
+    margin: 4px 0 0 0;
+
+    max-height: 240px;
+    overflow-y: auto;
+
+    z-index: 1000;
+}
+
+.suggestions li {
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.suggestions li:hover {
+    background: #2a2a2a;
+}
+
+.autocomplete input {
+    width: 100%;
+    padding: 12px 14px;
+    background: #141414;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    color: #f1f1f1;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.autocomplete input::placeholder {
+    color: #7a7a7a;
+}
+
+.autocomplete input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.25);
+}
+
+.suggestions li strong {
+    font-weight: 500;
+    color: #e5e7eb;
+}
+
+.suggestions li span {
+    color: #9ca3af;
+    font-size: 0.8rem;
+}
+
+.suggestions::-webkit-scrollbar {
+    width: 8px;
+}
+
+.suggestions::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.suggestions::-webkit-scrollbar-thumb {
+    background: #2f2f2f;
+    border-radius: 4px;
+}
+
+.suggestions::-webkit-scrollbar-thumb:hover {
+    background: #3f3f3f;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

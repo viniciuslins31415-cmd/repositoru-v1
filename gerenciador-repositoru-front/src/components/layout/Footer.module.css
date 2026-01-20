@@ -1,0 +1,12 @@
+.footer {
+  background: linear-gradient(90deg, #00182b, #320c00);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.brand {
+  font-weight: 600;
+  color: #ff8a00;
+}

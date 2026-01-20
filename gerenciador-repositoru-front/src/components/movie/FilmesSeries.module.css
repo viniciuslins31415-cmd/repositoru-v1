@@ -1,0 +1,144 @@
+.page {
+  padding: 2rem;
+  min-height: calc(100vh - 80px);
+  background: linear-gradient(90deg, #00182b9a, #320c00ba);
+  background-position: center;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.header h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2096f69a;
+  text-shadow: 0 4px 1px rgba(255, 255, 255, 0.046);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background-color: #001B36;
+  color: #ffffff;
+
+  border: 1px solid #2095F6;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+
+.editButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background-color: #8f8f0033;
+  color: #ffffff;
+
+  border: 1px solid #f3f620;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+
+  margin-top: 15px;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+
+.editButton:hover {
+  background-color: #58540033;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  border: 1px solid #616100;
+}
+
+.deleteButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background-color: #8f000033;
+  color: #ffffff;
+
+  border: 1px solid #f62020;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+
+  margin-top: 15px;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+
+.deleteButton:hover {
+  background-color: #58000033;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  border: 1px solid #610000;
+}
+
+.addButton svg {
+  font-size: 1.3rem;
+}
+
+.addButton:hover {
+  background-color: #000C18;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.addButton:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 768px) {
+  .actions {
+    justify-content: center;
+  }
+
+  .header h2 {
+    text-align: center;
+  }
+}
+
+.card {
+  background-color: #2096f619;
+  padding: 20px;
+  border-style:groove;
+  border-radius: 20px;
+  margin: 15px;
+  border-color: #ffffff46;
+}
+
+.card img {
+  border-color: #f684206c;
+  border-style:inherit;
+  padding: 2px;
+}
